@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/bg_gradient_blue">
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dailyListTitle"
+        tools:text = "Today"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        style="@style/mainFont"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dailyListDescription"
+        tools:text = "Partly Cloudy in the Morning" />
+
+    <TextView
+        style="@style/mainFont"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dailyListProbability"
+        tools:text = "Rain probability: 0%" />
+</LinearLayout>

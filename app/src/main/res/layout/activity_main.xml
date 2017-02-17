@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.umg.edu.colorweather.MainActivity"
+    android:background="@drawable/bg_gradient_blue">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconImageView"
+        android:src="@drawable/na"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="--"
+        android:id="@+id/descriptionTextView"
+        android:layout_below="@+id/iconImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:id="@+id/currentTempTextView"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="54sp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/degreeImageView"
+        android:src="@drawable/degree"
+        android:layout_marginTop="@dimen/activity_vertical_margin_custom"
+        android:layout_toRightOf="@+id/currentTempTextView"
+        android:layout_toEndOf="@+id/currentTempTextView"
+        android:layout_alignTop="@+id/currentTempTextView" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H: --°"
+        android:id="@+id/highestTextView"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/currentTempTextView"
+        android:layout_alignLeft="@+id/iconImageView"
+        android:layout_alignStart="@+id/iconImageView" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L: --°"
+        android:id="@+id/lowestTempTextView"
+        android:layout_alignTop="@+id/highestTextView"
+        android:layout_alignRight="@+id/iconImageView"
+        android:layout_alignEnd="@+id/iconImageView" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_button_text"
+        android:id="@+id/dailyWeatherTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hourly_button_text"
+        android:id="@+id/hourlyWeatherTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/lowestTempTextView"
+        android:layout_toStartOf="@+id/lowestTempTextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/mainFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutely_button_text"
+        android:id="@+id/minutelyWeatherTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
